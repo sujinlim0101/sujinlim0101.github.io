@@ -1,1 +1,13 @@
-첫글
+---
+layout: post
+title: 첫글
+subtitle: github pages 처음으로 쓰는 글
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [books, test]
+---
+
+
+공부하면서 배웠던 지식들을 기록하려고 한다.
+ 
