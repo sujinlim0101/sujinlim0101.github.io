@@ -34,9 +34,10 @@ string text line 2`);
 // string text line 2"
 ```
 
+<br />
 ### Expression interpolation
 
-표현식(expression)을 일반 문자열(normal strings)에 삽입한다면 string과 식 간의 '+'를 사용하지 않고 쉽게 표현 할 수 있다.
+표현식(expression)을 일반 문자열(normal strings)에 삽입한다면 string과 식 간의 '+'를 사용하지 않고 쉽게 표현 할 수 있다.  
 <br />
 예를 들어보자.
 
@@ -47,6 +48,8 @@ console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".");
 // "Fifteen is 15 and
 // not 20."
 ```
+
+<br />
 
 ### tagged template 에서의 황용
 
@@ -94,4 +97,4 @@ console.log(output);
 // that Mike is a youngster
 ```
 
-이문서는 Mozilla의 template-literal를 참고하여 만들었습니다.
+이 문서는 Mozilla의 template-literal를 참고하여 만들었습니다.
