@@ -1,16 +1,23 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+subtitle: This is me!
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+제 이름은 임수진입니다. 제가 가능한 스택들입니다.
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- ES6
+- React
+- Redux
+- Redux Saga
+- Sass
+- Styled Components
+- Interactive Web
+- Responsive Web
+- Bootstrap, Ant-design
 
 What else do you need?
 
 ### My story
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+hello world.
