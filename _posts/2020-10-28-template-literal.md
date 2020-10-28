@@ -1,9 +1,9 @@
 ---
 layout: post
-title: template-literal?
-subtitle: template-literal?
+title: Template-literal?
+subtitle: 템플릿 리터럴에 대해
 gh-badge: [star, fork, follow]
-tags: [next.js]
+tags: [template, teamplate-literal]
 comments: true
 ---
 
@@ -51,10 +51,10 @@ console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".");
 ### tagged template 에서의 황용
 
 태그를 사용하면 템플릿 리터럴을 함수로 이옹할 수 있습니다. 태그 함수의 첫 번째 인수는 문자열 값의 배열을 포함합니다. 나머지 인수는 표현식과 관련됩니다. 결국 함수는 조작 된 문자열을 반환 할 수 있습니다
-아래 예제를 들어 설명해보겠습니다. myTag라는 함수가 있고, 이를 벡틱을 이용하여 호출하겠습니다.
+아래 예제를 들어 설명해보겠습니다. myTag라는 함수가 있고, 이를 벡틱을 이용하여 호출하겠습니다.  
 <br />
-var output = myTag`that ${ person } is a ${ age }`; 이런식으로요.
-<br />
+var output = myTag\`that ${ person } is a ${ age }\`; 이런식으로요.  
+<br />  
 그럼 인자로 들어가게 되는 값들은 어떻게 되는 걸까요?
 그건, 벡틱 안에 있는 문자열들을 모두 모아서 배열로 반환하고, 이는 string 배열이 됩니다.
 또 나머지 표현식들은 각각 personExp, ageExp에 들어가게 됩니다.
@@ -93,3 +93,5 @@ var output = myTag`that ${ person } is a ${ age }`;
 console.log(output);
 // that Mike is a youngster
 ```
+
+이문서는 Mozilla의 template-literal를 참고하여 만들었습니다.
