@@ -17,6 +17,7 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 ```
 
 위처럼 higherOrderComponent에 인자로 WrappedComponent를 넣어서 새로운 컴포넌트를 만듭니다. 그 새로운 컴포넌트가 EnhancedComponent인거죠!
+<br />
 
 ### CouterCompnent들 만들어보기 (고차함수 없을 떄)
 
@@ -47,8 +48,6 @@ class ClickCounter extends Component {
 export default ClickCounter;
 
 ```
-
-<br>
 
 다음으로 Hover 했을 때 카운트가 증가하는 함수를 만들어봅시다.
 
@@ -81,13 +80,11 @@ export default HoverCounter;
 ### Higher-Order-Component 만들어보기
 
 앞선 두개의 컴포넌트의 공통적인 특징, count라는 state와 이벤트 발생시 숫자가 1이 증가하는 기능을 가진 increment함수를 포함한 컴포넌트를 만들었습니다.
-
-<br /><br />
+<br />
 withCounter라는 함수의 인자로 컴포넌트가 들어옵니다. 결국 이 컴포넌트는 인자가 되어 WithCounter라는 새로운 함수로 반환됩니다.
 새로 반환되는 컴포넌트에는 state와 increment라는 함수가 포함되죠.
 
 ```
-
 import React from 'react';
 
 const withCounter = WrappedComponent => {
@@ -121,6 +118,7 @@ export default withCounter;
 
 ```
 
+<br/><br/>
 withCounter가 함수라는 것에서 알 수 있듯, 우리는 앞으로 withCounter의 인자로 ClickCounter와 HoverCounter를 넘겨주러 가봅시다.
 
 ```
@@ -157,8 +155,6 @@ export default withCounter(HoverCounter);
 
 ```
 
-<br />
-
 이렇게 withCounter로 두 컴포넌트를 넘겨주게 되면 props가 넘어가게 됩니다. 이를 this.props로 연결해주면 전과 같은 기능이 완성되는 겁니다.
 
-이처럼, 고차 컴포넌트 (HOC, higher-order component)는 컴포넌트 로직을 재사용하기 위한 React의 기술입니다.
+이처럼, 고차 컴포넌트 (HOC, higher-order component)는 컴포넌트 로직을 재사용하기 위한 React의 기술이고 오늘은 여기까지입니다~!
