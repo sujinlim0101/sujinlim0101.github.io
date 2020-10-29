@@ -158,3 +158,5 @@ export default withCounter(HoverCounter);
 이렇게 withCounter로 두 컴포넌트를 넘겨주게 되면 props가 넘어가게 됩니다. 이를 this.props로 연결해주면 전과 같은 기능이 완성되는 겁니다.
 
 이처럼, 고차 컴포넌트 (HOC, higher-order component)는 컴포넌트 로직을 재사용하기 위한 React의 기술이고 오늘은 여기까지입니다~!
+<br />
+본글은 React 공식문서와 Codevoultion을 참고하여 작성되었습니다.
