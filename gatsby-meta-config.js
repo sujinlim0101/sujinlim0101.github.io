@@ -1,12 +1,12 @@
 module.exports = {
-  title: `zoomkoding.com`,
+  title: `zzin-coding`,
   description: `줌코딩의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
-  siteUrl: `https://www.zoomkoding.com`,
+  siteUrl: `https://sujinlim0101.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `sujinlim0101/sujinlim0101.github.io`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
@@ -43,8 +43,8 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2018.07 ~ 2018.12',
-        activity: '자존감 랩실(X-ray 그리드 라인 제거 개선 기법 연구)',
+        date: '2021.03 ~',
+        activity: '에어클래스 프론트엔드',
       },
     ],
 
