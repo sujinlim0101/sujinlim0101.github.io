@@ -1,6 +1,6 @@
 module.exports = {
-  title: `zzin-coding`,
-  description: `줌코딩의 개발일기`,
+  title: `찐-coding`,
+  description: `찐코딩의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://sujinlim0101.github.io/`,
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
