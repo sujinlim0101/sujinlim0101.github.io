@@ -1,5 +1,5 @@
 module.exports = {
-  title: `찐-coding`,
+  title: `찐-코딩`,
   description: `찐코딩의 개발일기`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://sujinlim0101.github.io/`,
@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['사람에 가치를 두는', '능동적으로 일하는', '이로운 것을 만드는'],
-      thumbnail: 'zoomkoding.gif', // Path to the image in the 'asset' folder
+      thumbnail: 'orange-man.png', // Path to the image in the 'asset' folder
     },
     social: {
       linkedIn: ``,
