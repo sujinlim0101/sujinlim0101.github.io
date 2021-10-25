@@ -1,6 +1,6 @@
 ---
 emoji: ✒️
-title: 옵저버 패턴
+title: 디자인패턴 - 옵저버 패턴
 date: "2021-10-25 00:01:00"
 author: 찐코딩
 tags: design pattern
@@ -189,4 +189,7 @@ public class WeatherStation {
 
 가장 일반적으로 java.util 패키지에 들어있는 Observer 인터페이스와 Observable 클래스를 들 수 있습니다. 그리고 이걸 사용하면, 푸시 방식으로도 갱신할 수 있고 풀 방식으로도 갱신이 가능하다. 즉, Observable 클래스는 위의 Subject 와 같은 역할을 하고, Observer 인터페이스는 위의 옵저버 인터페이스와 같은 역할을 한다.
 
-http://astrod.github.io/design_pattern/2016/03/09/Head-First-%EC%98%B5%EC%A0%80%EB%B2%84-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/ 의 글을 참고하여 작성했습니다.
+---
+
+[Head First] 옵저버 디자인 패턴 ( [링크](http://astrod.github.io/design_pattern/2016/03/09/Head-First-%EC%98%B5%EC%A0%80%EB%B2%84-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/) ) 을 참고하여 작성했습니다.
+

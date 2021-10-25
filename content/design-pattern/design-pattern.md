@@ -1,6 +1,6 @@
 ---
 emoji: ✒️
-title: 디자인패턴
+title: 디자인패턴 - 디자인패턴
 date: "2021-10-25 00:00:00"
 author: 찐코딩
 tags: design pattern
