@@ -1,9 +1,9 @@
 ---
 emoji: ✒️
-title:  Bootstrap에서 Sass 활용하기
+title:  Bootstrap 5의 Sass
 date: "2021-10-19 00:00:00"
 author: 찐코딩
-tags: bootstrap
+tags: bootstrap 5
 categories: css
 ---
 
