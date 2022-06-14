@@ -97,3 +97,6 @@ function getShortestDistance(input) {
 
 getShortestDistance(['5 2', '0 2 0 1 0', '1 0 1 0 0', '0 0 0 0 0', '2 0 0 1 1', '2 2 0 1 2']);
 ```
+
+참고
+https://velog.io/@ywc8851/%EB%B0%B1%EC%A4%80-15686-%EC%B9%98%ED%82%A8-%EB%B0%B0%EB%8B%AC-javascript
