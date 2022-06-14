@@ -3,8 +3,8 @@ emoji: ✒️
 title: 프로젝트 yarn berry 적용기
 date: '2022-03-31 00:00:00'
 author: 찐코딩
-tags: yarn
-categories: yarn
+tags: 블로그
+categories: 블로그
 ---
 
 ## Yarn Berry 도입!

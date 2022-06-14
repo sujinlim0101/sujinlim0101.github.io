@@ -1,11 +1,12 @@
 ---
 emoji: ✒️
-title: 디자인패턴 - 옵저버 패턴
-date: "2021-10-25 00:01:00"
+title: 디자인패턴 - 옵저버 패턴 알아보기
+date: '2021-10-25 00:01:00'
 author: 찐코딩
 tags: design pattern
 categories: book
 ---
+
 # 옵저버 패턴
 
 객체들에게 연락망을 돌립시다.
@@ -45,8 +46,8 @@ public class WeatherData {
 배웠던 원칙을 살펴보죠.
 
 ```jsx
-		currentConditionDisplay.update(temp, humidity, pressure);
-		statisticsDisplay.update(temp, humidity, pressure);
+currentConditionDisplay.update(temp, humidity, pressure);
+statisticsDisplay.update(temp, humidity, pressure);
 ```
 
 이 부분에서 구체적인 구현에 맞춰서 코딩했기 때문에 프로그램을 고치지 않고는 다른 디스플레이 항목을 추가/제거 하지 않고는 다른 디스플레이 항목을 추가/제거 할수 없습니다.
@@ -105,29 +106,29 @@ public class WeatherData implements Subject {
     private float temperature;
     private float humidity;
     private float pressure;
-    
+
     public WeatherData() {
         observers = new ArrayList<>();
     }
-    
+
     public void registerObserver(Observer o) {
         observers.add(o);
     }
-    
+
     public void removeObserver(Observer o) {
         observers.remove(o);
     }
-    
+
     public void notifyObservers() { // 모든 옵저버에게 알리기.
         for(Observer each : observers) {
             each.update(temperature, humidity, pressure);
         }
     }
-    
+
     public void measurementsChanged() {
         notifyObservers();
     }
-    
+
     public void setMeasurements(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
@@ -143,20 +144,20 @@ public class WeatherData implements Subject {
 public class CurrentConditionsDisplay implements Observer, DisplayElemnt {
     private float temperature;
     private float humidity;
-    private Subject weatherData; // 이 객체는 당장 사용할 일이 없지만 저장해둠. 
-    
+    private Subject weatherData; // 이 객체는 당장 사용할 일이 없지만 저장해둠.
+
     // 생성자에 subject 객체를 전달하고, 그 객체를 사용하여 디스플레이를 옵저버로 등록한다.
-    public CurrentConditionsDisplay(Subject weatherData) { 
+    public CurrentConditionsDisplay(Subject weatherData) {
         this.weatherData = weatherData;
         weatherData.registerObserver(this);
     }
-    
+
     public void update(float temperature, float humidity, float pressure) {
         this.temperature = temperature;
         this.humidity = humidity;
         dispaly();
     }
-    
+
     public void display() {
         // 최근에 얻은 기온과 습도를 출력한다.
         System.out.println("Current conditions : " + temperature + "F degrees and " + humidity + "% humidity");
@@ -172,9 +173,9 @@ public class CurrentConditionsDisplay implements Observer, DisplayElemnt {
 public class WeatherStation {
     public static void main(String [] args) {
         WeatherData weatherData = new weatherData(); // observer 생성
-        
+
         CurrentConditionsDisplay currentDisplay = new CurrentConditionsDisplay(weatherData);
-        
+
         // 새로운 기상 측정값이 들어온것처럼 만듭니다.
         weatherData.setMeasurements(80, 65, 30.4f);
         weatherData.setMeasurements(82, 70, 29.2f);
@@ -192,4 +193,3 @@ public class WeatherStation {
 ---
 
 [Head First] 옵저버 디자인 패턴 ( [링크](http://astrod.github.io/design_pattern/2016/03/09/Head-First-%EC%98%B5%EC%A0%80%EB%B2%84-%EB%94%94%EC%9E%90%EC%9D%B8-%ED%8C%A8%ED%84%B4/) ) 을 참고하여 작성했습니다.
-
